@@ -186,8 +186,6 @@ body {
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
- 
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -315,8 +313,7 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
 }
- 
- 
+
 /* Scroll animations */
 .fade-in {
   opacity: 0;
@@ -355,7 +352,7 @@ body {
 .main-image {
   width: 100%;
   height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
   transition: all 0.3s ease;
   opacity: 0;
   transform: scale(0.95);
@@ -558,8 +555,6 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
 }
-
- 
 
 .add-to-cart-btn:active {
   transform: translateY(0);
@@ -829,7 +824,6 @@ body {
   box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
 }
 
- 
 .copyright {
   text-align: center;
   font-size: 0.9rem;
@@ -911,6 +905,65 @@ body {
   transform: translateY(-2px);
 }
 
+/* how it work  */
+.howItWork {
+  background-color: #6b2b00;
+}
+.howItWorkLeft,
+.howItWorkRight {
+  width: 50%;
+  color: #fff;
+}
+
+.howItWorkLeft h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.howItWorkLeft p {
+  font-size: 16px;
+  margin: 10px 0px 21px 00px;
+  width: 82%;
+}
+ 
+.infoCard {
+  background-color: #ffffff1c;
+  padding: 16px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10.5px;
+  transition: 0.5s all linear;
+  cursor: pointer;
+}
+.infoCard:hover{
+  background-color: #FF6600;
+}
+ 
+ 
+.infoCard p {
+  margin-top: 10px;
+}
+
+.infoSetCard {
+  position: absolute;
+  top: 0px;
+  right: 19px;
+  background-color: #6b2b00;
+  padding: 2.5px 16px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive CSS */
 
 @media (min-width: 1400px) {
@@ -954,7 +1007,7 @@ body {
   .PainPointsInfo p {
     font-size: 16px;
     width: 470px;
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1009,7 +1062,6 @@ body {
     height: 60vh;
   }
 
-
   .hero-title {
     font-size: 2.5rem;
   }
@@ -1031,11 +1083,11 @@ body {
   .payment-methods {
     justify-content: center;
     gap: 10px;
-}
+  }
 
   .product-container {
     flex-flow: column;
-     padding: 80px 20px;
+    padding: 80px 20px;
   }
   .product-slider {
     width: 100%;
@@ -1048,9 +1100,8 @@ body {
     flex-direction: column;
   }
   .PainPoints {
-
     padding: 25px 5px;
-}
+  }
   .PainPointsInfo p {
     font-size: 25px;
     width: 100%;
@@ -1080,10 +1131,9 @@ body {
     font-size: 2rem;
     margin-bottom: 30px;
   }
-.Solutionsection{
-  flex-direction: column-reverse;
-}
-
+  .Solutionsection {
+    flex-direction: column-reverse;
+  }
 
   .footer {
     padding: 40px 20px 20px;
@@ -1155,7 +1205,11 @@ body {
   .product-slider {
     padding: 0px;
   }
-   .main-image-container {
+
+  .discount-badge {
+    font-size: 10px;
+  }
+  .main-image-container {
     height: 200px;
   }
   .thumbnail {
@@ -1222,6 +1276,4 @@ body {
     font-size: 0.8rem;
     margin: 30px 0 20px;
   }
-
- 
 }
