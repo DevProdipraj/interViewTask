@@ -185,10 +185,7 @@ body {
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
-.contact-btn::after {
-  content: "→";
-  font-size: 16px;
-}
+ 
 
 .hamburger {
   display: none;
@@ -410,7 +407,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 54px 0px;
+  padding: 50px;
 }
 .product-slider {
   width: 50%;
@@ -737,6 +734,7 @@ body {
 .PainPoints {
   justify-content: space-between;
   gap: 32px;
+  padding: 80px 50px;
 }
 .PainPointsImg {
   width: 50%;
@@ -963,6 +961,10 @@ body {
   .footer-description {
     font-size: 1rem;
   }
+  .PainPointsInfo p {
+    font-size: 16px;
+    width: 470px;
+}
 }
 
 @media screen and (max-width: 768px) {
