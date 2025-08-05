@@ -58,7 +58,7 @@ body {
   align-items: center;
 }
 .sectionPadding {
-  padding: 56px 0px;
+  padding: 56px 20px;
 }
 
 /* header section css  */
@@ -906,11 +906,18 @@ body {
 }
 
 /* how it work  */
-.howItWork {
+.howItWork,
+.whatsStarContainer {
   background-color: #6b2b00;
 }
+.howItWorkContainer{
+  gap: 20px;
+  align-items: self-start;
+}
 .howItWorkLeft,
-.howItWorkRight {
+.howItWorkRight,
+.whatsStartLeft,
+.whatsStartRight {
   width: 50%;
   color: #fff;
 }
@@ -927,7 +934,7 @@ body {
  
 .infoCard {
   background-color: #ffffff1c;
-  padding: 16px;
+  padding:  24px;
   border-radius: 10px;
   position: relative;
   margin-bottom: 10.5px;
@@ -941,25 +948,54 @@ body {
  
 .infoCard p {
   margin-top: 10px;
+  font-size: 16px;
 }
 
 .infoSetCard {
   position: absolute;
   top: 0px;
   right: 19px;
-  background-color: #6b2b00;
+  background-color: #FF6600;
   padding: 2.5px 16px;
   border-top-right-radius: 18px;
   border-bottom-left-radius: 18px;
   cursor: pointer;
+  transition: 0.5s all linear;
 }
 
+.infoCard:hover .infoSetCard{
+ background-color: #6b2b00;
+}
 
+.infoCard h3{
+  margin-top: 10px;
+}
+.infoCard ul{
+  margin-left: 32px;
+  
+}
+.infoCard ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
 
+}
 
+.whatsStartRight h1{
+  font-size: 48px;
+  margin-bottom: 21.5px;
+  font-weight: 600;
+}
 
-
-
+.whatsStar{
+  gap: 32px;
+  align-items: self-start;
+}
+.whatsStartLeft{
+  margin-top: 125px;
+}
+.whatsStartRight img{
+  width: 100%;
+}
 
 
 
@@ -1008,6 +1044,9 @@ body {
     font-size: 16px;
     width: 470px;
   }
+  .whatsStartLeft {
+    margin-top: 40px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1135,6 +1174,32 @@ body {
     flex-direction: column-reverse;
   }
 
+.whatsStartRight{
+  margin-top: 20px;
+}
+
+
+.howItWorkLeft,
+.howItWorkRight,
+.whatsStartLeft,
+.whatsStartRight {
+  width: 100%;
+
+}
+.howItWorkLeft img{
+  width: 100%;
+}
+.howItWorkRight{
+  margin-top: 20px;
+}
+.whatsStar{
+  flex-direction: column-reverse;
+  padding: 10px 20px !important;
+}
+    .whatsStartLeft {
+        margin-top: 0px;
+    }
+
   .footer {
     padding: 40px 20px 20px;
   }
@@ -1173,6 +1238,7 @@ body {
   .social-icons {
     justify-content: center;
   }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -1276,4 +1342,12 @@ body {
     font-size: 0.8rem;
     margin: 30px 0 20px;
   }
+  .whatsStartRight h1 {
+    font-size: 32px;
+    margin-bottom: 5.5px;
+    font-weight: 600;
+}
+.whatsStartRight {
+        margin-top: 0px;
+    }
 }
